@@ -1,14 +1,23 @@
 const styles = {
     navContainer: {
+  bg: 'gray',
+  width: '100%',
   display: 'flex',
-  bg: 'orange',
+  alignItems: 'center',
+  justifyContent: 'center'
     },
-    leftContainer: {
-      display: 'flex',
-      flexDirection: 'column',
-      padding: '20px',
-      lineHeight: '10px',
-      fontFamily: "Montserrat"
+    title: {
+       margin: '30px'
+    },
+    navMenu: {
+       
+    },
+    navItems: {
+    display: ['none', 'none', 'none'],
+    
+    },
+    items: {
+        mr: '20px'
     }
   }
   
