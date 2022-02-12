@@ -1,6 +1,9 @@
 // Components
 import {Box, StatUpArrow, Text} from '@chakra-ui/react';
-import Image from 'next/image'
+import {useState} from 'react';
+import Image from 'next/image';
+import Sticky from 'react-stickynode';
+
 import {
   List,
   ListItem,
@@ -37,21 +40,29 @@ const links = [
 
 
 function Navbar() {
+const [isOpen, setIsOpen] = useState(false);
+const [isSticky, setIsSticky] = useState(false); 
+
+const handleStateChange = (status) => {
+  if(status.status === Sticky.STATUS_FIXED) {
+    setIsSticky(true);
+  }else if (status.status === Sticky.STATUS_ORIGINAL) {
+    setIsSticky(false)
+  }
+}
+
+
   return (
-   <Box sx={styles.navContainer}>
-     <Box sx={styles.title}>
-  <Image src={Logo} alt='something'/>
-  </Box>
-<Box sx={styles.navMenu}>
-  <UnorderedList styleType='none' sx={styles.navItems}>
-    {links.map((link)=> (
-      <ListItem key={link.link} sx={styles.items}>{link.title}</ListItem>
-    ))}
-  </UnorderedList>
+    <Sticky>
+<Box sx={styles.nav}>
+<Box sx={styles.leftHeader}>
+  <Image src='/uvaclogo.png' alt='UVAC Logo' height='250px' width='250px'/>
 </Box>
+<Box onClick={() => setIsOpen(!isOpen)} sx={styles.hamburger}>
 
-
+</Box>
    </Box>
+   </Sticky>
   )
 }
 

@@ -1,24 +1,20 @@
 const styles = {
-    navContainer: {
-  bg: 'gray',
-  width: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center'
-    },
-    title: {
-       margin: '30px'
-    },
-    navMenu: {
-       
-    },
-    navItems: {
-    display: ['none', 'none', 'none'],
-    
-    },
-    items: {
-        mr: '20px'
-    }
+  nav: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      flexWrap: 'wrap',
+  },
+  leftHeader: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '90px',
+      textAlign: 'center',
+  },
+  
+
+
   }
   
 
