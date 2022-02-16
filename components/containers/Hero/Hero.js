@@ -1,13 +1,13 @@
 // Components
 import {Box, Text} from '@chakra-ui/react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 //Styles
 import styles from './styles';
 
 
 // Media 
-import bgImage from '../../../public/example.png'
+import bgImage from '../../../public/example.png';
 
 function Hero() {
     return (

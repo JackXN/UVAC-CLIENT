@@ -1,72 +1,95 @@
-// Components
-import {Box, StatUpArrow, Text} from '@chakra-ui/react';
-import {useState} from 'react';
-import Image from 'next/image';
-import Sticky from 'react-stickynode';
-import NavItems from './NavbarData';
-import styled from 'styled-components';
-
-import {
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-} from '@chakra-ui/react'
-
-// Styles
-import styles from './styles';
-
-
-// Image
-import Logo from '../../../public/uvaclogo.png'
-
-
-// Menu Items
-
-
-
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import styled from "styled-components";
+import NavItems from "./NavbarData";
+import Sticky from "react-stickynode";
+import { Button } from "@chakra-ui/react";
+import {Text } from "@chakra-ui/react";
 
 
 function Navbar() {
-const [isOpen, setIsOpen] = useState(false);
-const [isSticky, setIsSticky] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
-const handleStateChange = (status) => {
-  if(status.status === Sticky.STATUS_FIXED) {
-    setIsSticky(true);
-  }else if (status.status === Sticky.STATUS_ORIGINAL) {
-    setIsSticky(false)
-  }
-}
+  const handleStateChange = (status) => {
+    if (status.status === Sticky.STATUS_FIXED) {
+      setIsSticky(true);
+    } else if (status.status === Sticky.STATUS_ORIGINAL) {
+      setIsSticky(false);
+    }
+  };
+
 
 
   return (
     <Sticky>
-<Box sx={styles.nav}>
-<Box sx={styles.leftHeader}>
-  <Image src='/uvaclogo.png' alt='UVAC Logo' height='250px' width='250px'/>
-</Box>
-<Box onClick={() => setIsOpen(!isOpen)} sx={styles.hamburger}>
-<span/>
-<span/>
-<span/>
-<span/>
-</Box>
-<Box sx={styles.menu} isOpen={isOpen}>
-{NavItems.map((item, index) => (
- 
-))}
-</Box>
-   </Box>
-   </Sticky>
-  )
+      <Nav>
+        <LeftHeader>
+          <Text as='h1'>UVAC <span>ELITE</span></Text>
+        </LeftHeader>
+        <Hamburger onClick={() => setIsOpen(!isOpen)}>
+          <span />
+          <span />
+          <span />
+          <span />
+        </Hamburger>
+        <Menu isOpen={isOpen}>
+          {NavItems.map((item, index) => (
+            <LinkItem key={index} style={{ cursor: "pointer", }}>
+              <Link
+                key={index}
+                sx={styles.link}
+                activeClass="active"
+                to={item.path}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {item.label}
+              </Link>
+            </LinkItem>
+          ))}
+          <Button 
+          bg="#AD0441" 
+          sx={styles.button}>
+            <Link to="/login">Get A Quote</Link>
+          </Button>
+        </Menu>
+      </Nav>
+    </Sticky>
+  );
 }
 
+export default Navbar;
 
+const styles = {
+  link: {
+    fontSize: ["15px"],
+    fontFamily: 'Rubik, sans-serif',
+    fontWeight: "400",
+    color: 'orange',
 
+'&:hover': {
+cursor: 'pointer',
+color: 'orange',
+}
+  },
+  button: {
+    fontSize: ["15px"],
+    fontWeight: "400",
+    fontFamily: 'Rubik,sans-serif',
+    color: "white",
+    p: "25px",
+  },
+  img: {
+    height: "200px",
+    width: "140px",
+    mt: "40px",
+  },
+};
 
-
+// CLEAN UP LATER
 
 const LinkItem = styled.div`
   padding: 6px;
@@ -201,7 +224,3 @@ export const MenuButton = styled.a`
     color: red;
   }
 `;
-
-
-
-export default Navbar
