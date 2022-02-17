@@ -1,5 +1,5 @@
 // Components
-import {Box, Text} from '@chakra-ui/react';
+import {Box, Text, Button} from '@chakra-ui/react';
 import Image from 'next/image';
 
 //Styles
@@ -11,12 +11,23 @@ import bgImage from '../../../public/example.png';
 
 function Hero() {
     return (
-     <Box bg={bgImage} bgSize='cover' bgRepeat='no-repeat' height='100vh'>
-<Box sx={styles.test} backgroundImage={bgImage}>
-  <Image src={bgImage} alt='something'/>
+<Box sx={styles.container}>
+  
+<Box sx={styles.content}>
+  <Text as='h1' sx={styles.title}><span style={{color: 'red'}}>HVAC</span> Products <br/> Dealer</Text>
+<Box sx={styles.buttonContainer}>
+  <Button type='button' sx={styles.button}>Request A Service</Button>
 </Box>
-     </Box>
+<Text as='h3' color='white' fontFamily='Montserrat' fontSize='15px'>Licensed, Bonded & Insured</Text>
+</Box>
+
+
+  </Box>
+
     )
 }
+
+
+
 
 export default Hero

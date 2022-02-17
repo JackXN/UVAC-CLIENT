@@ -141,9 +141,9 @@ export const Nav = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
-  background: orange;
   background-color: rgba(0, 0, 0, 0.6); 
   color: rgba(0, 0, 0, 0.6);
+  
 
 
 `;

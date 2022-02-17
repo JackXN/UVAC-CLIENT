@@ -24,7 +24,7 @@ export default function Home() {
     </Head>
     <Box background='black' sx={styles.wrapper}>
       <Navbar/>
-    
+    <Hero/>
     </Box>
     </>
     
@@ -36,7 +36,7 @@ export default function Home() {
 
 const styles = {
   wrapper: {
-    backgroundImage: "url('../bg.png')",
+    backgroundImage: "url('../background.png')",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
