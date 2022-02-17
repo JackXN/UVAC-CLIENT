@@ -27,7 +27,7 @@ function Navbar() {
     <Sticky>
       <Nav>
         <LeftHeader>
-          <Image src={Logo} alt='Logo'/>
+          <Image src={Logo} alt='Logo' height='150px' width='150px' pr='20px'/>
        <Box sx={styles.textLogo}>
           <Text as='h1'  sx={styles.title} color='white' fontFamily='Montserrat'>UVAC <span>ELITE</span></Text>
           <Text as='h3' color='white' color='#E50E14' sx={styles.subTitle}>Ventilation And Cleaning Solutions</Text>
@@ -143,6 +143,7 @@ export const Nav = styled.div`
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6); 
   color: rgba(0, 0, 0, 0.6);
+  height: 190px;
   
 
 
