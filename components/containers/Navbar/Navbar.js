@@ -4,7 +4,9 @@ import styled from "styled-components";
 import NavItems from "./NavbarData";
 import Sticky from "react-stickynode";
 import { Button } from "@chakra-ui/react";
-import {Text } from "@chakra-ui/react";
+import {Text, Box} from "@chakra-ui/react";
+import Logo from '../../../public/Logo.png';
+import Image from 'next/image';
 
 
 function Navbar() {
@@ -25,7 +27,11 @@ function Navbar() {
     <Sticky>
       <Nav>
         <LeftHeader>
-          <Text as='h1'>UVAC <span>ELITE</span></Text>
+          <Image src={Logo} alt='Logo'/>
+       <Box sx={styles.textLogo}>
+          <Text as='h1'  sx={styles.title} color='white' fontFamily='Montserrat'>UVAC <span>ELITE</span></Text>
+          <Text as='h3' color='white' color='#E50E14' sx={styles.subTitle}>Ventilation And Cleaning Solutions</Text>
+          </Box>
         </LeftHeader>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
           <span />
@@ -34,6 +40,7 @@ function Navbar() {
           <span />
         </Hamburger>
         <Menu isOpen={isOpen}>
+
           {NavItems.map((item, index) => (
             <LinkItem key={index} style={{ cursor: "pointer", }}>
               <Link
@@ -47,13 +54,15 @@ function Navbar() {
                 duration={500}
               >
                 {item.label}
+                
               </Link>
             </LinkItem>
+            
           ))}
           <Button 
           bg="#AD0441" 
           sx={styles.button}>
-            <Link to="/login">Get A Quote</Link>
+            <Link to="/login">Get A Free Quote!</Link>
           </Button>
         </Menu>
       </Nav>
@@ -80,13 +89,32 @@ color: 'orange',
     fontWeight: "400",
     fontFamily: 'Rubik,sans-serif',
     color: "white",
-    p: "25px",
+    p: "20px",
+    borderRadius: '20px',
+    border: 'none',
+    background: '#E50E14'
   },
   img: {
     height: "200px",
     width: "140px",
     mt: "40px",
   },
+  title: {
+    fontSize: '50px',
+    position: 'relative',
+    top: '20px'
+    
+
+  },
+  subTitle: {
+  position: 'relative',
+  bottom: '30px',
+  left: '50px'
+  },
+  textLogo: {
+display: 'flex',
+flexDirection: 'column',
+  }
 };
 
 // CLEAN UP LATER
@@ -101,10 +129,9 @@ const LinkItem = styled.div`
 `;
 
 const LeftHeader = styled.div`
-  display: flex;
+display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
   text-align: center;
 `;
 
@@ -113,6 +140,12 @@ export const Nav = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 20px;
+  background: orange;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: rgba(0, 0, 0, 0.6);
+
+
 `;
 
 export const Hamburger = styled.div`
@@ -135,12 +168,12 @@ export const Hamburger = styled.div`
   }
 `;
 
-export const Logo = styled.div`
-padding: 2rem 0;
-height 69px;
-width: 69px;
+// export const Logo = styled.div`
+// padding: 2rem 0;
+// height 69px;
+// width: 69px;
 
-`;
+// `;
 
 export const Menu = styled.div`
   display: flex;
@@ -161,6 +194,14 @@ export const Menu = styled.div`
     margin-right: 200px;
   }
 `;
+
+// export const TextLogo = styled.div `
+// display: flex;
+// flex-direction: column;
+// background:orange;
+// `
+
+
 
 export const MenuLink = styled.a`
   padding: 1rem 2rem;

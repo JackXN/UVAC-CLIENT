@@ -4,16 +4,16 @@ export default [
         label: 'Home',
     },
     {
-        path: 'about',
-        label: 'About',
-    },
-    {
         path: 'services',
         label: 'Services',
     },
     {
-        path: 'blog',
-        label: 'Blog',
+        path: 'about',
+        label: 'About Us',
+    },
+    {
+        path: 'quote',
+        label: 'Get A Free Quote!',
     },
      {
          path: 'contact',
