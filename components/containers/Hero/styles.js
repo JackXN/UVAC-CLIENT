@@ -1,7 +1,7 @@
 const styles = {
     container: {
         display: 'flex',
-        height: '100vh',
+        height: '90vh',
         background: 'inherit',
         alignItems: 'center',
         justifyContent: 'center'

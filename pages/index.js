@@ -6,7 +6,7 @@ import Image from 'next/image'
 import {Box} from '@chakra-ui/react';
 import Navbar from '../components/containers/Navbar/Navbar';
 import Hero from '../components/containers/Hero/Hero';
-
+import InfoCard from '../components/containers/InfoCard/index';
 // Media
 import test from '../public/test.jpeg'
 
@@ -25,6 +25,7 @@ export default function Home() {
     <Box background='black' sx={styles.wrapper}>
       <Navbar/>
     <Hero/>
+    <InfoCard/>
     </Box>
     </>
     
