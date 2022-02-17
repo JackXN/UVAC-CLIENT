@@ -1,9 +1,11 @@
 const styles = {
     container: {
-        // display: 'flex',
-        height: '100vh',
+        display: 'flex', 
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%',
         background: '#313030',
-        padding: '50px'
+        padding: '100px'
     },
     banner: {
         background: '#E60C17',
@@ -20,6 +22,19 @@ const styles = {
     },
     emergency: {
         color: 'white'
+    },
+    header: {
+        display: 'flex',
+        color: 'white',
+        flexDirection: 'column',
+        textAlign: 'left'
+        // width: '20%'
+        
+        
+    },
+    information: {
+        // display: 'flex', 
+        flexDirection: 'column'
     }
 }
 
