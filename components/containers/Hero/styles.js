@@ -17,7 +17,10 @@ const styles = {
         },
         title: {
             fontSize: '90px',
-            color: 'white'
+            color: 'white',
+            fontWeight: 'bold',
+            fontFamily: 'Montserrat',
+            textTransform: 'uppercase'
         },
 
         buttonContainer: {

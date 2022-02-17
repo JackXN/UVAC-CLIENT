@@ -40,7 +40,6 @@ function Navbar() {
           <span />
         </Hamburger>
         <Menu isOpen={isOpen}>
-
           {NavItems.map((item, index) => (
             <LinkItem key={index} style={{ cursor: "pointer", }}>
               <Link
@@ -54,7 +53,6 @@ function Navbar() {
                 duration={500}
               >
                 {item.label}
-                
               </Link>
             </LinkItem>
             
@@ -74,7 +72,7 @@ export default Navbar;
 
 const styles = {
   link: {
-    fontSize: ["15px"],
+    fontSize: ["20px"],
     fontFamily: 'Rubik, sans-serif',
     fontWeight: "400",
     color: 'orange',
@@ -181,6 +179,7 @@ export const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-top: 25px;
 
   @media (max-width: 1000px) {
     overflow: hidden;

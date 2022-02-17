@@ -14,14 +14,12 @@ function Hero() {
 <Box sx={styles.container}>
   
 <Box sx={styles.content}>
-  <Text as='h1' sx={styles.title}><span style={{color: 'red'}}>HVAC</span> Products <br/> Dealer</Text>
+  <Text as='h1' sx={styles.title}>Professional Air <br/> Duct Cleaning <br/></Text>
 <Box sx={styles.buttonContainer}>
   <Button type='button' sx={styles.button}>Request A Service</Button>
 </Box>
 <Text as='h3' color='white' fontFamily='Montserrat' fontSize='15px'>Licensed, Bonded & Insured</Text>
 </Box>
-
-
   </Box>
 
     )
