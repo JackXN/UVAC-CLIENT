@@ -3,52 +3,35 @@ import {Box, Text} from '@chakra-ui/react';
 import { Grid, GridItem } from '@chakra-ui/react'
 import Image from 'next/image';
 // Icons
-import Clock from '../../../public/clock.png'
-import Location from '../../../public/location.png'
+import {BsClock as Clock} from 'react-icons/bs';
+import {ImLocation as Location} from 'react-icons/im';
+import {AiTwotonePhone as Phone} from 'react-icons/ai';
+
 // Styles
 import styles from './styles';
 
-function index() {
+function index({data}) {
     return (
-        <Box sx={styles.container}>
-<Grid templateColumns='repeat(3, 1fr)' gap={100}>
-<GridItem w='100%' h='100%'  sx={styles.emergency}>
-<Text as='h2'transform='skewX(10deg)' color='#847E7E'>Emergency Service Number</Text>
-<Box sx={styles.banner}>
-<Text as='p'>(801)-441-9433</Text>
-</Box>
-</GridItem>
- <GridItem w='100%' h='10'>
-     <Box sx={styles.header}>
-         <Box sx={styles.imageContainer} textAlign='left'>
-<Image src={Clock} alt='clock'/>
-<Text as='h1'>Working hours</Text>
-</Box>
-
-<Box sx={styles.information}>
-    <Text as='p'>Mon - Sat 8am - 10pm</Text>
-    <Text as='p'>SUNDAY closed</Text>
-</Box>
-</Box>
-</GridItem>
-<GridItem w='100%' h='10' >
-<Box sx={styles.header} positon='relative' bottom='200px'>
-    <Box sx={styles.imageContainer} textAlign='left'>
-        <Image src={Location} alt='Location'/>
-        <Text as='h1'>Location</Text>
-    </Box>
-    <Box sx={styles.information}>
-        <Text as='p'>276 N 600 W Salt Lake City, Utah</Text>
-        <Text as='p'>84010</Text>
-    </Box>
-</Box>
-
-</GridItem>
-
-
-</Grid>
-
+<Box sx={styles.container}>
+{data.map((item, index)=> (
+    <Box key={index} sx={styles.infoCards}>
+<Text as='h1' fontSize='15px' color='white'>{item.label}</Text>
+<Box sx={styles.infoDesc}>
+<Text as='p' fontSize='13px' color='#847E7E'>{item.descOne}</Text>
+<Text as='p' fontSize='13px' color='#847E7E'>{item.extra}</Text>
         </Box>
+        </Box>
+))}
+
+
+
+<Box sx={styles.contact}>
+<Text as='h1' fontSize='15px' color='#847E7E'> Emergency Service Number</Text>
+<Text as='h1' fontSize='15px' display='flex' background='#E50E14' padding='10px' borderRadius='7px' color='white'  border='none'><Phone/> (801)-441-9433</Text>
+
+
+</Box>
+</Box>
     )
 }
 

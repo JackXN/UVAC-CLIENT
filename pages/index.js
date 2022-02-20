@@ -7,9 +7,12 @@ import {Box} from '@chakra-ui/react';
 import Navbar from '../components/containers/Navbar/Navbar';
 import Hero from '../components/containers/Hero/Hero';
 import InfoCard from '../components/containers/InfoCard/index';
-// Media
-import test from '../public/test.jpeg'
+import Map from '../components/containers/Map/index';
 
+
+
+// Info data
+import data from '../components/containers/InfoCard/data';
 
 
 
@@ -25,7 +28,8 @@ export default function Home() {
     <Box background='black' sx={styles.wrapper}>
       <Navbar/>
     <Hero/>
-    <InfoCard/>
+    <InfoCard data={data}/>
+    <Map/>
     </Box>
     </>
     

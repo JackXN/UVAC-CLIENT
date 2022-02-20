@@ -12,7 +12,6 @@ import bgImage from '../../../public/example.png';
 function Hero() {
     return (
 <Box sx={styles.container}>
-  
 <Box sx={styles.content}>
   <Text as='h1' sx={styles.title}>Professional Air <br/> Duct Cleaning <br/></Text>
 <Box sx={styles.buttonContainer}>

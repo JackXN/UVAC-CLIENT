@@ -9,6 +9,7 @@ import Logo from '../../../public/Logo.png';
 import Image from 'next/image';
 
 
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -27,14 +28,16 @@ function Navbar() {
     <Sticky>
       <Nav>
         <LeftHeader>
-          <Image src={Logo} alt='Logo' height='150px' width='150px' pr='20px'/>
+          <Box sx={styles.imageBox}>
+          <Image src={Logo} alt='Logo' height='50px' width='50px' pr='20px'/>
+          </Box>
        <Box sx={styles.textLogo}>
           <Text as='h1'  sx={styles.title} color='white' fontFamily='Montserrat'>UVAC <span>ELITE</span></Text>
           <Text as='h3' color='white' color='#E50E14' sx={styles.subTitle}>Ventilation And Cleaning Solutions</Text>
           </Box>
         </LeftHeader>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
-          <span />
+          <span/>
           <span />
           <span />
           <span />
@@ -109,9 +112,13 @@ color: 'orange',
   bottom: '30px',
   left: '50px'
   },
-  textLogo: {
-display: 'flex',
+  textLogo: { 
+display: ['none'],
 flexDirection: 'column',
+
+  },
+  imageBox: {
+    mt: '15px'
   }
 };
 
@@ -138,10 +145,12 @@ export const Nav = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px;
+  // padding: 15px;
+  padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.6); 
   color: rgba(0, 0, 0, 0.6);
-  height: 190px;
+  border-radius: 10px;
+  
   
 
 

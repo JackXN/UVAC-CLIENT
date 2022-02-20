@@ -4,7 +4,8 @@ const styles = {
         height: '90vh',
         background: 'inherit',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        mt: '100px'
     },
        
 
@@ -16,7 +17,7 @@ const styles = {
             textAlign: 'center'
         },
         title: {
-            fontSize: '90px',
+            fontSize: '35px',
             color: 'white',
             fontWeight: 'bold',
             fontFamily: 'Montserrat',

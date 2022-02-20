@@ -9,22 +9,24 @@ const styles = {
   },
   leftHeader: {
       display: 'flex',
-      alignItems: 'center',
+     
       justifyContent: 'center',
       height: '90px',
       textAlign: 'center',
+      
   },
   hamburger: {
       flexDirection: 'column',
       cursor: 'pointer',
       display: 'none',
       mr: '30px',
-      mt: '35px',
+      mt: '20px',
+      
 
       span: {
-          height: '2px',
-          width: '25px',
-          backgroundColor: 'white',
+          height: '20px',
+          width: '200px',
+          backgroundColor: 'orange',
           mb: '4px',
           borderRadius: '5px'
       }
