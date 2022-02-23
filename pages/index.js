@@ -9,7 +9,7 @@ import Hero from '../components/containers/Hero/Hero';
 import InfoCard from '../components/containers/InfoCard/index';
 import Map from '../components/containers/Map/index';
 import ReasonInfo from '../components/containers/ReasonInfo/index';
-
+import SimpleMap from '../components/containers/GoogleMap/index';
 
 // Info data
 import data from '../components/containers/InfoCard/data';
@@ -31,6 +31,7 @@ export default function Home() {
     <InfoCard data={data}/>
     <Map/>
     <ReasonInfo/>
+    <SimpleMap/>
     </Box>
     </>
     
