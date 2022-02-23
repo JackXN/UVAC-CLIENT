@@ -8,7 +8,7 @@ import Navbar from '../components/containers/Navbar/Navbar';
 import Hero from '../components/containers/Hero/Hero';
 import InfoCard from '../components/containers/InfoCard/index';
 import Map from '../components/containers/Map/index';
-
+import ReasonInfo from '../components/containers/ReasonInfo/index';
 
 
 // Info data
@@ -30,6 +30,7 @@ export default function Home() {
     <Hero/>
     <InfoCard data={data}/>
     <Map/>
+    <ReasonInfo/>
     </Box>
     </>
     
