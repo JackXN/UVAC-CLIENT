@@ -7,12 +7,21 @@ textAlign: 'center',
 fontFamily: 'Montserrat',
 
 
+
 h1: {
     fontSize: '25px',
     color: 'black',
     fontWeight: 'bold',
     margin: '15px',
 }
+},
+
+wrapper: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '20px'
 },
 
 infoCard: {

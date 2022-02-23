@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-
+import {Box, Text} from '@chakra-ui/react';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class index extends Component {
@@ -15,7 +15,7 @@ class index extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <Box style={{ height: '100vh', padding:'100px', background: 'white' }}>
         <GoogleMapReact
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
@@ -26,7 +26,7 @@ class index extends Component {
             text="My Marker"
           />
         </GoogleMapReact>
-      </div>
+      </Box>
     );
   }
 }
