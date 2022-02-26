@@ -40,21 +40,17 @@ function Navbar() {
         </LeftHeader>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
           <span/>
-          <span />
-          <span />
-          <span />
+          <span/>
+          <span/>
+          <span/>
         </Hamburger>
         <Menu isOpen={isOpen}>
           {NavItems.map((item, index) => (
-            <LinkItem key={index} style={{ cursor: "pointer", }}>
+            <LinkItem key={index}>
               <Link
                 sx={styles.link}
                 activeClass="active"
                 to={item.path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
               >
                 {item.label}
               </Link>
@@ -79,12 +75,8 @@ const styles = {
     fontSize: ["20px"],
     fontFamily: 'Rubik, sans-serif',
     fontWeight: "400",
-    color: 'orange',
+    color: 'black',
 
-'&:hover': {
-cursor: 'pointer',
-color: 'orange',
-}
   },
   button: {
     fontSize: ["15px"],
@@ -130,8 +122,13 @@ const LinkItem = styled.div`
   color: white;
   margin: 20px;
   font-family: 'Montserrat';
-  font-weight: light;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
+
+&:hover {
+  color: orange;
+  cursor: pointer;
+}
 `;
 
 const LeftHeader = styled.div`
