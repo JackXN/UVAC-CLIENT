@@ -35,7 +35,7 @@ function Navbar() {
           </Box>
        <Box sx={styles.textLogo}>
           <Text as='h1'  sx={styles.title} color='white' fontFamily='Montserrat'>UVAC <span>ELITE</span></Text>
-          <Text as='h3' color='white' color='#E50E14' sx={styles.subTitle}>Ventilation And Cleaning Solutions</Text>
+          <Text as='h3' color='white' sx={styles.subTitle}>Ventilation And Cleaning Solutions</Text>
           </Box>
         </LeftHeader>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
