@@ -17,11 +17,12 @@ const styles = {
             textAlign: 'center'
         },
         title: {
-            fontSize: '35px',
+            fontSize: ['35px', '35px', '35px', '67px'],
             color: 'white',
             fontWeight: 'bold',
             fontFamily: 'Montserrat',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            textShadow: '2px 2px 8px black'
         },
 
         buttonContainer: {

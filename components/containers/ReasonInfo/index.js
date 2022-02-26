@@ -23,7 +23,7 @@ function index() {
     return (
         <Box sx={styles.container}>
 <Text as='h1' fontSize='27px' fontWeight='600' fontFamily='Montserrat' textTransform='uppercase'>Why Clean Your Air Ducts?</Text>
-<Box sx={styles.introContainer}>
+     <Box sx={styles.introContainer}>
 <Text as ='p'>Over time and even after the construction of a new home dust, pollen, bacteria, fungus, spores, mold and even debris left from construction crews can accumulate within your air ducts. 
 
 These foreign objects can negatively affect your HVAC system by impeding airflow, adding strain to your system and ultimately resulting in increased utility costs. 
@@ -37,7 +37,7 @@ If you find that you need to dust frequently, dirty air ducts may be the culprit
 {data.map((item, index) => (
 <Box sx={styles.infoCard} key={index}>
     <Box sx={styles.iconContainer}>
- <img height='50px' width='50px' layout='fill' src={item.image} alt='icon'/>
+ <img height='50px' width='50px' layout='fill' src={item.image}/>
     </Box>
     <Box sx={styles.description}>
 <Text as='p'>{item.description}</Text>

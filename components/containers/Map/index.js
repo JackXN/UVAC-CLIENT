@@ -22,19 +22,19 @@ const data = [
     description:
       "Whether you are looking for quality service or professional and honest inspections, UVAC Elite is certified and up to par with the latest standards",
     isTrue: true,
-    image: [Certification],
+    image: '/Certification.svg',
   },
   {
     label: "Request A Service Call",
     description:
       "Whether you are looking for quality service or professional and honest inspections, UVAC Elite is certified and up to par with the latest standards",
-    image: [Support],
+    image: '/Support.svg',
   },
   {
     label: "Financing Options",
     description:
       "Whether you are looking for quality service or professional and honest inspections, UVAC Elite is certified and up to par with the latest standards",
-    image: [Finance],
+    image: '/Finance.svg',
   },
 ];
 
@@ -48,8 +48,10 @@ function index() {
           <Box sx={styles.card}>
             {data.map((item, index) => (
               <Box key={index} sx={styles.cardContainer}>
-                <Box alignSelf="center" sx={styles.icon}>{item.image ? <Support /> : null}</Box>
-                <Box sx={styles.information}>
+                <Box alignSelf="center" sx={styles.icon}>
+                  <img src={item.image} alt='something' height='50px' width='50px' color='white' padding='10px'/>
+                  </Box>
+                  <Box sx={styles.information}>
                   <Text as="h2">{item.label}</Text>
                   <Text as="p">{item.description}</Text>
                 </Box>

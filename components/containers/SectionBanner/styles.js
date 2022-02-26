@@ -11,6 +11,7 @@ container: {
     justifyContent: 'center',
     alignItems: 'center',
     fontFamily: 'Montserrat',
+    backgroundAttachment: 'fixed',
 
     h1: {
         color: 'white',

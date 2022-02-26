@@ -9,9 +9,6 @@ import Logo from '../../../public/Logo.png';
 import Image from 'next/image';
 
 
-
-
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -23,8 +20,6 @@ function Navbar() {
       setIsSticky(false);
     }
   };
-
-
 
   return (
     <Sticky>
@@ -124,10 +119,30 @@ const LinkItem = styled.div`
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
+  position:relative;
+  z-index: 1;
 
 &:hover {
-  color: orange;
+
   cursor: pointer;
+}
+
+&:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index-1;
 }
 `;
 
