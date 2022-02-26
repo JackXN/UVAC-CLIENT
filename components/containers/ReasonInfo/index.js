@@ -37,7 +37,7 @@ If you find that you need to dust frequently, dirty air ducts may be the culprit
 {data.map((item, index) => (
 <Box sx={styles.infoCard} key={index}>
     <Box sx={styles.iconContainer}>
- <img height='50px' width='50px' layout='fill' src={item.image}/>
+ <img height='50px' width='50px' layout='fill' src={item.image} alt='icon'/>
     </Box>
     <Box sx={styles.description}>
 <Text as='p'>{item.description}</Text>
