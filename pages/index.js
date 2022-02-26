@@ -10,6 +10,7 @@ import InfoCard from '../components/containers/InfoCard/index';
 import Map from '../components/containers/Map/index';
 import ReasonInfo from '../components/containers/ReasonInfo/index';
 import SimpleMap from '../components/containers/GoogleMap/index';
+import SectionBanner from '../components/containers/SectionBanner/index';
 
 // Info data
 import data from '../components/containers/InfoCard/data';
@@ -29,6 +30,7 @@ export default function Home() {
       <Navbar/>
     <Hero/>
     <Map/>
+    <SectionBanner/>
     <ReasonInfo/>
     <SimpleMap/>
     <InfoCard data={data}/>

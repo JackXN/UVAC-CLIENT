@@ -4,9 +4,10 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     textAlign: "center",
-    background: "rgb(116,111,111)",
-    background:
-      "linear-gradient(90deg, rgba(116,111,111,1) 0%, rgba(49,48,48,1) 100%)",
+    // background: "rgb(116,111,111)",
+    // background:
+    //   "linear-gradient(90deg, rgba(116,111,111,1) 0%, rgba(49,48,48,1) 100%)",
+    background: 'white',
     backgroundPosition: "left",
     flexWrap: "wrap",
   },
@@ -25,7 +26,7 @@ const styles = {
     margin: ["20px"],
 
     h2: {
-      color: "#ffff",
+      color: "black",
       fontSize: "23px",
       fontFamily: "Montserrat",
       fontWeight: "bold",
@@ -51,7 +52,7 @@ const styles = {
       background: '#333131',
       padding: '15px',
       borderRadius: '50px',
-      color: '#646464'
+      color: 'white'
   }
 };
 
