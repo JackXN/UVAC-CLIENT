@@ -28,10 +28,10 @@ export default function Home() {
     <Box background='black' sx={styles.wrapper}>
       <Navbar/>
     <Hero/>
-    <InfoCard data={data}/>
     <Map/>
     <ReasonInfo/>
     <SimpleMap/>
+    <InfoCard data={data}/>
     </Box>
     </>
     

@@ -26,6 +26,8 @@ const styles = {
 
         buttonContainer: {
             pb: '15px',
+            mt: '20px'
+
         },
 
         button : {

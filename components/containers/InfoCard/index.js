@@ -17,7 +17,7 @@ function index({data}) {
     <Box key={index} sx={styles.infoCards}>
 <Text as='h1' fontSize='15px' color='white'>{item.label}</Text>
 <Box sx={styles.infoDesc}>
-<Text as='p' fontSize='13px' color='#847E7E'>{item.descOne}</Text>
+<Text as='p' fontSize='13px' color='#847E7E'>{item.descOne}</Text> 
 <Text as='p' fontSize='13px' color='#847E7E'>{item.extra}</Text>
         </Box>
         </Box>

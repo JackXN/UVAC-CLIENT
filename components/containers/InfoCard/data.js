@@ -17,7 +17,7 @@ const data = [
         extra: '84013 Salt Lake City, Utah',
         isPhone: false
     },
-    
+     
 ]
 
 

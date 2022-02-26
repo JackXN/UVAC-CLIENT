@@ -6,6 +6,7 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       flexWrap: 'wrap',
+      padding: '10px',
   },
   leftHeader: {
       display: 'flex',

@@ -43,6 +43,12 @@ iconContainer: {
 description: {
     fontFamily: 'Montserrat',
     fontWeight: 'medium'
+},
+
+introContainer: {
+    pr: ['25px', '25px', '50px'],
+    pl: ['25px'],
+    pt: ['25px']
 }
 };
 

@@ -15,7 +15,8 @@ class index extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <Box style={{ height: '100vh', padding:'100px', background: 'white' }}>
+      <Box  sx={styles.mapContainer} style={{ height: '100vh',
+      background: 'white' }}>
         <GoogleMapReact
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
@@ -28,6 +29,12 @@ class index extends Component {
         </GoogleMapReact>
       </Box>
     );
+  }
+}
+
+const styles = {
+  mapContainer: {
+    padding: ['20px']
   }
 }
 

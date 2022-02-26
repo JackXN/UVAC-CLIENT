@@ -19,7 +19,7 @@ contact: {
     padding: '20px'
 },
 infoDesc: {
-    textAlign: 'left '
+    textAlign: 'left  '
 }
 
 

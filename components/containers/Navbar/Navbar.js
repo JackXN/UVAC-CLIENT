@@ -10,6 +10,8 @@ import Image from 'next/image';
 
 
 
+
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -128,9 +130,9 @@ const LinkItem = styled.div`
   padding: 6px;
   color: white;
   margin: 20px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Montserrat';
   font-weight: light;
-  font-size: 20px;
+  font-size: 14px;
 `;
 
 const LeftHeader = styled.div`
@@ -145,11 +147,12 @@ export const Nav = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  // padding: 15px;
-  padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.6); 
   color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+padding: 20px;
+padding-bottom: 20px;
+padding-top: 0px;
   
   
 
