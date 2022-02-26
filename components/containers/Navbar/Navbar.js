@@ -48,7 +48,6 @@ function Navbar() {
           {NavItems.map((item, index) => (
             <LinkItem key={index} style={{ cursor: "pointer", }}>
               <Link
-                key={index}
                 sx={styles.link}
                 activeClass="active"
                 to={item.path}
