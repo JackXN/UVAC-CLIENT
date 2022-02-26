@@ -6,8 +6,6 @@ background: 'white',
 textAlign: 'center',
 fontFamily: 'Montserrat',
 
-
-
 h1: {
     fontSize: '25px',
     color: 'black',
@@ -46,9 +44,15 @@ description: {
 },
 
 introContainer: {
-    pr: ['25px', '25px', '50px'],
-    pl: ['25px'],
-    pt: ['25px']
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    padding: ['35px'],
+    pt: '15px',
+    p: {
+        mb: '20px',
+        color: '#777676',
+    }
 }
 };
 
