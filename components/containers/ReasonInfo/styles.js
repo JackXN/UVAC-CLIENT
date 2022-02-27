@@ -13,7 +13,6 @@ h1: {
     margin: '15px',
 }
 },
-
 wrapper: {
     display: 'flex',
     flexWrap: 'wrap',

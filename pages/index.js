@@ -12,9 +12,9 @@ import ReasonInfo from '../components/containers/ReasonInfo/index';
 import SimpleMap from '../components/containers/GoogleMap/index';
 import SectionBanner from '../components/containers/SectionBanner/index';
 
+
 // Info data
 import data from '../components/containers/InfoCard/data';
-
 
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300&display=swap"/>
     </Head>
     <Box background='black' sx={styles.wrapper}>
-      <Navbar/>
+    <Navbar/>
     <Hero/>
     <Map/>
     <SectionBanner/>
@@ -45,7 +45,7 @@ export default function Home() {
 
 const styles = {
   wrapper: {
-    backgroundImage: "url('../background.png')",
+    // backgroundImage: "url('../background.png')",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',

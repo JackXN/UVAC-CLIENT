@@ -2,10 +2,15 @@ const styles = {
     container: {
         display: 'flex',
         height: '90vh',
-        background: 'inherit',
         alignItems: 'center',
         justifyContent: 'center',
-        mt: '100px'
+        mt: '100px',
+        backgroundImage: "url('../background.png')",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat',
+        
     },
        
 
