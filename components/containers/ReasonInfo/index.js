@@ -22,7 +22,7 @@ function index() {
 
     return (
         <Box sx={styles.container}>
-<Text as='h1' fontSize='27px' fontWeight='600' fontFamily='Montserrat' textTransform='uppercase'>Why Clean Your Air Ducts?</Text>
+<Text as='h1' fontWeight='600' fontFamily='Montserrat'  textTransform='uppercase' >Why Clean Your Air Ducts?</Text>
      <Box sx={styles.introContainer}>
 <Text as ='p'>Over time and even after the construction of a new home dust, pollen, bacteria, fungus, spores, mold and even debris left from construction crews can accumulate within your air ducts. 
 </Text>

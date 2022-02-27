@@ -53,6 +53,9 @@ introContainer: {
         mb: '20px',
         color: '#777676',
     }
+},
+title: {
+    fontSize: ['27px', '50px', '82px']
 }
 };
 

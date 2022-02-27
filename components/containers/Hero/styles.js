@@ -22,7 +22,6 @@ const styles = {
             fontWeight: 'bold',
             fontFamily: 'Montserrat',
             textTransform: 'uppercase',
-            textShadow: '2px 2px 8px black'
         },
 
         buttonContainer: {
