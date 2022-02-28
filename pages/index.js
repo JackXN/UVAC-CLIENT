@@ -11,7 +11,7 @@ import Map from '../components/containers/Map/index';
 import ReasonInfo from '../components/containers/ReasonInfo/index';
 import SimpleMap from '../components/containers/GoogleMap/index';
 import SectionBanner from '../components/containers/SectionBanner/index';
-
+import backgroundImage from '../public/background.png'
 
 // Info data
 import data from '../components/containers/InfoCard/data';
@@ -26,7 +26,7 @@ export default function Home() {
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300&display=swap"/>
     </Head>
-    <Box background='black' sx={styles.wrapper}>
+    <Box height='100vh' bg='black'>
     <Navbar/>
     <Hero/>
     <Map/>
@@ -44,11 +44,5 @@ export default function Home() {
 
 
 const styles = {
-  wrapper: {
-    // backgroundImage: "url('../background.png')",
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed'
-  }
+
 }

@@ -1,10 +1,10 @@
 const styles = {
     container: {
         display: 'flex',
-        height: '90vh',
+        height: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        mt: '100px',
+        pt: '200px',
         backgroundImage: "url('../background.png')",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
