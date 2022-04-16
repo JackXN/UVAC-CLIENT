@@ -68,15 +68,16 @@ export default Navbar;
 const styles = {
   link: {
     fontSize: ["20px"],
-    fontFamily: 'Rubik, sans-serif',
     fontWeight: "400",
     color: 'black',
+    fontFamily: 'Montserrat',
+    fontWeight: 'bold',
+    
 
   },
   button: {
     fontSize: ["15px"],
     fontWeight: "400",
-    fontFamily: 'Rubik,sans-serif',
     color: "white",
     p: "20px",
     borderRadius: '20px',
@@ -107,7 +108,7 @@ flexDirection: 'column',
   },
   imageBox: {
     mt: '15px'
-  }
+  },
 };
 
 // CLEAN UP LATER

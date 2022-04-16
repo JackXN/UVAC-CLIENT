@@ -15,6 +15,7 @@ import backgroundImage from '../public/background.png'
 
 // Info data
 import data from '../components/containers/InfoCard/data';
+import { ChevronRightIcon } from '@chakra-ui/icons';
 
 
 export default function Home() {
@@ -46,3 +47,5 @@ export default function Home() {
 const styles = {
 
 }
+
+

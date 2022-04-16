@@ -6,9 +6,11 @@ import Image from 'next/image';
 import {BsClock as Clock} from 'react-icons/bs';
 import {ImLocation as Location} from 'react-icons/im';
 import {AiTwotonePhone as Phone} from 'react-icons/ai';
+import { useState } from 'react';
 
 // Styles
 import styles from './styles';
+
 
 function index({data}) {
     return (
@@ -22,6 +24,8 @@ function index({data}) {
         </Box>
         </Box>
 ))}
+
+
 
 
 

@@ -5,7 +5,6 @@ import Image from 'next/image';
 //Styles
 import styles from './styles';
 
-
 // Media 
 import bgImage from '../../../public/example.png';
 
