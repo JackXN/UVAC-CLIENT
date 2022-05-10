@@ -18,23 +18,23 @@ import { FaRegMoneyBillAlt as Finance } from "react-icons/fa";
 
 const data = [
   {
-    label: "Certified Dealer",
+    label: "Environmentally Friendly",
     description:
       "Whether you are looking for quality service or professional and honest inspections, UVAC Elite is certified and up to par with the latest standards",
     isTrue: true,
-    image: '/Certification.svg',
+    image: '/environment.svg',
   },
   {
-    label: "Request A Service Call",
+    label: "Non-Toxic & Family Friendly",
     description:
       "Whether you are looking for quality service or professional and honest inspections, UVAC Elite is certified and up to par with the latest standards",
-    image: '/Support.svg',
+    image: '/family.svg',
   },
   {
-    label: "Financing Options",
+    label: "Pet Friendly",
     description:
       "Whether you are looking for quality service or professional and honest inspections, UVAC Elite is certified and up to par with the latest standards",
-    image: '/Finance.svg',
+    image: '/pet.svg',
   },
 ];
 

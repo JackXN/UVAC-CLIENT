@@ -12,11 +12,12 @@ function Hero() {
     return (
 <Box sx={styles.container}>
 <Box sx={styles.content}>
-  <Text as='h1' sx={styles.title}>Professional Air <br/> Duct Cleaning <br/></Text>
+  <Text as='h1' sx={styles.title}>For The Greenest <br/> Grass On The Block. <br/></Text>
 <Box sx={styles.buttonContainer}>
-  <Button type='button' sx={styles.button}>Request A Service</Button>
+  <Button type='button' sx={styles.button} sx={styles.buttonOne}>Get A Free Quote</Button>
+  <Button type='button' sx={styles.button} sx={styles.buttonTwo}>Learn More</Button>
 </Box>
-<Text as='h3' color='white' fontFamily='Montserrat' fontSize='15px'>Licensed, Bonded & Insured</Text>
+<Text as='h3' color='white' fontFamily='Montserrat' fontSize='16px' fontWeight="bold">Lawn Revival Service</Text>
 </Box>
   </Box>
 

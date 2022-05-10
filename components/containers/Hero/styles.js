@@ -5,7 +5,7 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         pt: '200px',
-        backgroundImage: "url('../background.png')",
+        backgroundImage: "url('../../../background.png')",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
@@ -22,7 +22,7 @@ const styles = {
             textAlign: 'center'
         },
         title: {
-            fontSize: ['35px', '35px', '35px', '67px'],
+            fontSize: ['35px', '35px', '35px', '50px'],
             color: 'white',
             fontWeight: 'bold',
             fontFamily: 'Montserrat',
@@ -42,9 +42,23 @@ const styles = {
             color: 'white',
             fontSize: '15px',
             fontFamily: 'Montserrat',
-            fontWeight: '400'
-                       
+            fontWeight: '400',
+            mr: ['20px'],
+            ml: ['20px']   
+        },
+
+        buttonOne: {
+            background: '#1C822D',
+            color:'#ffff',
+            mr: ['20px'],
+        },
+
+        buttonTwo: {
+            background: '#ffff',
+            color:'black',
+            ml: ['20px']  
         }
+    
 }
 
 export default styles
