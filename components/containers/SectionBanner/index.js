@@ -12,7 +12,7 @@ function index() {
     return (
         <Box sx={styles.container}>
             <Box sx={styles.leftContainer}>
-<Image src={imageOne} height='400px' width='500' zIndex='10'/>
+<Image src={imageOne} height='400px' width='500' x='10'/>
             </Box>
 
 
