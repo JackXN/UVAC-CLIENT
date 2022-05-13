@@ -18,8 +18,6 @@ const styles = {
     flexDirection: "column",
     flexWrap: 'wrap',
     padding: ['20px','20px', '20px', '0px'],
-
-   
   },
 
   title: {
@@ -32,7 +30,7 @@ const styles = {
 
     h2: {
       color: "#6E9928",
-      fontSize: ['16',"23px"],
+      fontSize: ['16','23px'],
       fontFamily: "Montserrat",
       fontWeight: "bold",
     },
@@ -53,12 +51,15 @@ const styles = {
     justifyContent: "center",
     alignitems: "center",
     textAlign: "center",
-  margin: '30px'
+  margin: '30px',
+  background: '#177E38',
+  borderRadius: '10px',
+
+  // HOVER EFFECT !!
   },
 
   icon: {
       fontSize: '30px',
-
       padding: '15px',
       borderRadius: '50px',
       color: 'white'
