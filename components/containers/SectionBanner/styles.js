@@ -36,19 +36,21 @@ rightContainer: {
   padding: ['20px'],
 
 
-
   p: {
 fontFamily: 'PT Sans, san-serif',
 fontWeight: '700',
-fontSize: ['13px','16px' ],
+fontSize: ['13px','16px', '18px' ],
 mt: '30px',
 padding: '5px'
   },
+
+
   h1: {
     color: '#0F4920',
     mt: '50px',
-    fontSize: ['20px'],
-    mb: '50px'
+    fontSize: ['20px', '35px'],
+    mb: '50px',
+    textTransform: 'capitalize'
   }
 },
 
@@ -56,13 +58,13 @@ leftContainer: {
   flex:['1',],
   zIndex: '10',
  position: 'relative',
- left: ['200px'],
+ left: ['200px', '200px', '200px'],
  display: ['none', 'none', 'none','flex']
  
   
 },
 textContainer: {
-  fontSize: ['16px'],
+  fontSize: ['16px', '18px', '22px'],
   lineHeight: ['30px'],
   display: 'flex',
   flexDirection: 'column',
@@ -70,7 +72,7 @@ textContainer: {
    alignItems: 'center',
    justifyContent:'center',
   pl: ['0px','0px','0px','90px'],
-  padding: '20px'
+  padding: ['20px', '30px']
 }
 
 }

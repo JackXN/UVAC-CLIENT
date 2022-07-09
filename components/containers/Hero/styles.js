@@ -1,3 +1,5 @@
+import { m } from "framer-motion"
+
 const styles = {
     container: {
         display: 'flex',
@@ -33,9 +35,9 @@ const styles = {
             display: 'flex',
             pb: '15px',
             mt: '20px',
-            
-
-
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
         },
         
 

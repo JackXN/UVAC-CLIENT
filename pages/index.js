@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 // Components
 import {Box} from '@chakra-ui/react';
+import Carousel from '../components/containers/Testimonials/Carousel';
 import Navbar from '../components/containers/Navbar/Navbar';
 import Hero from '../components/containers/Hero/Hero';
 import InfoCard from '../components/containers/InfoCard/index';
@@ -43,6 +44,7 @@ export default function Home() {
     <Hero/>
     <Map/>
     <SectionBanner/>
+    {/* <Carousel/> */}
     </Box>
     </>
     
